@@ -79,7 +79,7 @@ class NestedPlayersGroup(BaseGroup):
 
 
 class OptimizerStack:
-    def __init__(self, groups: List[BaseGroup], can_intersect=False):
+    def __init__(self, groups: List[BaseGroup], can_intersect=True):
         self.groups = groups
         self.uuid = uuid4()
         self.can_intersect = can_intersect
